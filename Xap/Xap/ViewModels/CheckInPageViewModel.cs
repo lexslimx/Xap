@@ -1,21 +1,27 @@
 ﻿using Prism.Commands;
+using Prism.Events;
 using Prism.Mvvm;
 using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xap.Events;
 using Xap.Views;
 
 namespace Xap.ViewModels
 {
     public class CheckInPageViewModel : ViewModelBase
     {
+        private IEventAggregator _eventAggregator;
+
         private INavigationService _navigation { get; set; }
-        public CheckInPageViewModel(INavigationService navigationService)
+        public CheckInPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
             : base(navigationService)
         {
+            _eventAggregator = eventAggregator;
             _navigation = navigationService;
             Title = "CheckIn";
+
         }
 
         async void OpenScannerAsync()

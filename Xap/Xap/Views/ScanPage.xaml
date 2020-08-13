@@ -1,8 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<forms:ZXingScannerPage  xmlns:forms="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+<ContentPage  xmlns:forms="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
                          xmlns="http://xamarin.com/schemas/2014/forms"
                          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                          xmlns:prism="http://prismlibrary.com"
                          prism:ViewModelLocator.AutowireViewModel="True"
-                         x:Class="Xap.Views.ScanPage">      
-</forms:ZXingScannerPage>
+                         x:Class="Xap.Views.ScanPage">
+    <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <forms:ZXingScannerView                                      
+                    IsScanning="{Binding IsScanning}" 
+                    IsAnalyzing="{Binding IsAnalyzing}"
+                    Result="{Binding Result, Mode=TwoWay}" 
+                    ScanResultCommand="{Binding ScanCommand}" />
+        <forms:ZXingDefaultOverlay               
+                x:Name="scannerOverlay"                                                       
+                BottomText="Place the red line over the barcode." />
+    </Grid>
+</ContentPage>
