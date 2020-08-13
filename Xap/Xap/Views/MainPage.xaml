@@ -2,7 +2,7 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Xap.Views"
-             x:Class="Xap.Views.MainPage"
+             x:Class="Xap.Views.MainPage"            
              Title="{Binding Title}">
     <local:CheckInPage Title="CheckIn"></local:CheckInPage>
     <local:HistoryPage Title="History"></local:HistoryPage>

@@ -6,12 +6,20 @@
                          prism:ViewModelLocator.AutowireViewModel="True"
                          x:Class="Xap.Views.ScanPage">
     <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <forms:ZXingScannerView                                      
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="4*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <forms:ZXingScannerView     
+                    Grid.Row="1"
                     IsScanning="{Binding IsScanning}" 
                     IsAnalyzing="{Binding IsAnalyzing}"
                     Result="{Binding Result, Mode=TwoWay}" 
                     ScanResultCommand="{Binding ScanCommand}" />
         <forms:ZXingDefaultOverlay               
+                Grid.Row="2"
                 x:Name="scannerOverlay"                                                       
                 BottomText="Place the red line over the barcode." />
     </Grid>
