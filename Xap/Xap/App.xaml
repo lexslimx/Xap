@@ -6,6 +6,9 @@
   <Application.Resources>
 
     <!-- Application resource dictionary -->
-
-  </Application.Resources>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="#7784E9"/>
+            <Setter Property="BarTextColor" Value="White"/>
+        </Style>
+    </Application.Resources>
 </prism:PrismApplication>

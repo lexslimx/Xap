@@ -18,8 +18,7 @@
             <ColumnDefinition Width="4*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <Button ImageSource="ic_action_format_align_justify.png"
-                BackgroundColor="#7784E9"
+        <Button ImageSource="ic_action_format_align_justify.png"               
                 Command="{Binding OpenScannerCommand}"
                 Grid.Row="0" Grid.Column="3"></Button>
 
@@ -27,7 +26,7 @@
                Keyboard="Telephone" Grid.Row="0" Grid.ColumnSpan="3"
                HorizontalOptions="Fill" HorizontalTextAlignment="Center" />
 
-        <Button Text="CheckIn" Grid.Row="4" BackgroundColor="#7784E9" Grid.Column="0" Grid.ColumnSpan="4" >
+        <Button Text="CheckIn" Grid.Row="4" BackgroundColor="#7784E9" TextColor="#ffff" Grid.Column="0" Grid.ColumnSpan="4" >
         </Button>
     </Grid>
 </ContentPage>
