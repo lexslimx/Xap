@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<forms:ZXingScannerPage  xmlns:forms="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+                         xmlns="http://xamarin.com/schemas/2014/forms"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                         xmlns:prism="http://prismlibrary.com"
+                         prism:ViewModelLocator.AutowireViewModel="True"
+                         x:Class="Xap.Views.ScanPage">      
+</forms:ZXingScannerPage>
