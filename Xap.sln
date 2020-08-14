@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xap", "Xap\Xap\Xap.csproj", "{8469083E-B551-4FD9-BDD7-A10EE61A4CD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xap", "Xap\Xap\Xap.csproj", "{8469083E-B551-4FD9-BDD7-A10EE61A4CD5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xap.Android", "Xap\Xap.Android\Xap.Android.csproj", "{3D0AC390-9A78-4A65-B746-9D5C46E1AD30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xap.Data", "Xap.Data\Xap.Data.csproj", "{99848FA3-3900-42F7-8326-E7075CDD726C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{3D0AC390-9A78-4A65-B746-9D5C46E1AD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D0AC390-9A78-4A65-B746-9D5C46E1AD30}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D0AC390-9A78-4A65-B746-9D5C46E1AD30}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{99848FA3-3900-42F7-8326-E7075CDD726C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99848FA3-3900-42F7-8326-E7075CDD726C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99848FA3-3900-42F7-8326-E7075CDD726C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99848FA3-3900-42F7-8326-E7075CDD726C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
