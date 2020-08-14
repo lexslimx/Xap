@@ -7,4 +7,5 @@
              Title="{Binding Title}">
     <local:CheckInPage Title="CheckIn"></local:CheckInPage>
     <local:HistoryPage Title="History"></local:HistoryPage>
+    <local:SettingsPage Title="Settings"></local:SettingsPage>
 </TabbedPage>

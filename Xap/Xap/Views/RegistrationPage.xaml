@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Xap.Views.RegistrationPage" BackgroundColor="#7784E9">
+    <Grid Margin="10,10,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.4*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+            <Image Margin="30,30,30,30" VerticalOptions="CenterAndExpand" Source="icon"></Image>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Label Text="EmailL" TextColor="White"></Label>
+        </StackLayout>
+        <StackLayout Grid.Row="2">
+            <Entry Placeholder="email address" TextColor="White" Text="{Binding EmailAddress}"></Entry>
+        </StackLayout>
+        <StackLayout Grid.Row="3">
+            <Label Text="Password" TextColor="White"></Label>
+        </StackLayout>
+        <StackLayout Grid.Row="4">
+            <Entry Placeholder="************" TextColor="White" IsPassword="True" Text="{Binding Password}"></Entry>
+        </StackLayout>
+        <StackLayout Grid.Row="5">
+            <Button Command="{Binding RegisterCommand}" TextColor="White" Text="Register" BorderColor="white" BorderWidth="1" BackgroundColor="#7784E9" ></Button>
+        </StackLayout>
+        <StackLayout Grid.Row="6">
+            <Button Command="{Binding GoToLogInCommand}" TextColor="White" Text="LogIn" BackgroundColor="#7784E9" ></Button>
+        </StackLayout>
+    </Grid>
+</ContentPage>

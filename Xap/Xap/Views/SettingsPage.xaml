@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"             
+             x:Class="Xap.Views.SettingsPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="0.5*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="{Binding AgencyName}" Grid.Row="0" Grid.ColumnSpan="4"
+               VerticalTextAlignment="Center"
+               HorizontalOptions="Center" HorizontalTextAlignment="Center">
+        </Label>
+
+        <Label Text="Branch" Grid.Row="2" Grid.ColumnSpan="3"
+               HorizontalOptions="Start">
+        </Label>
+        <Picker Grid.Row="3" Grid.ColumnSpan="4" Title = "Select Your Branch" ItemsSource="{Binding Branches}"
+                ItemDisplayBinding="{Binding BranchName}"                
+                VerticalOptions = "LayoutOptions.CenterAndExpand">
+        </Picker>
+
+        <Label Text="Room" Grid.Row="4" Grid.ColumnSpan="3"
+               HorizontalOptions="Start">
+        </Label>
+        <Picker Grid.Row="5" Grid.ColumnSpan="4" Title = "Select A Location" ItemsSource="{Binding Rooms}"
+                ItemDisplayBinding="{Binding RoomName}"                
+                VerticalOptions = "LayoutOptions.CenterAndExpand">
+        </Picker>
+
+        <Button Text="Save" Grid.Row="7" BackgroundColor="#7784E9" 
+                TextColor="#ffff" 
+                Grid.Column="0" Grid.ColumnSpan="4" >
+        </Button>
+
+  
+            
+        
+    </Grid>
+</ContentPage>
